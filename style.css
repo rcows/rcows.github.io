@@ -2,11 +2,11 @@
 
 body {
 	background-color: #DEDEDE;
-	font-family: Assistant;
+	font-family: assistant, helvetica neue, sans-serif;
 	justify-content: left;
-	margin-left: 50px;
-	margin-right; 50px;
-	margin-top: 50px;
+	margin-left: 100px;
+	margin-right; 100px;
+	margin-top: 120px;
 	margin-bottom: 50px;
 
 }
@@ -21,6 +21,6 @@ h1 {
 }
 
 p{
-	font-size: 18px;
+	font-size: 17px;
 	font-color: #373737;
 }
