@@ -1,39 +1,78 @@
 /* style.css */
 
-body {
-	background-color: #DEDEDE;
-	font-family: assistant, helvetica neue, sans-serif;
-	justify-content: left;
-	margin-left: 100px;
-	margin-right; 100px;
-	margin-top: 120px;
-	margin-bottom: 50px;
-
+*,
+*::before,
+*;;after {
+	box-sizing: border-box;
 }
 
-div {
-	margin-bottom: 120px;
+body {
+	background-color: #DEDEDE;
+	font: 1.3rem 'Assistant', sans-serif;
+	line-height: 1.7;
+}
+
+main {
+	display: grid;
+	float: left;
+}
+
+section {
+	padding: 2rem;
+}
+
+.container {
+	margin-inline: auto;
+	width: min(90%, 70.5rem);
+}
+
+.split {
+	display: flex;
+	flex-direction: column;
 }
 
 h1 {
 	font-size: 33px;
-	padding-bottom; 150px;
+	font-weight: 550;
 }
 
-p{
+p {
 	font-size: 17px;
+	font-weight: 300;
 	font-color: #373737;
 }
 
-.text {
-	width: 700px;
-	float: left;
-
-}
-
-.image {
-	width: 400px;
+img {
 	float: right;
-	margin-right: 100px;
-
 }
+
+a:link {
+  color: #373737;
+}
+
+a:visited {
+  color: #373737;
+}
+
+a:hover {
+  color: #373737;
+}
+
+a:active {
+  color: #373737;
+}
+
+@media screen and (min-width: 40em) {
+	.split {
+		flex-direction: row;
+	}
+	
+	.split > * {
+		flex-basis: 100%;
+	}
+
+	.split > * + * {
+		margin-left: 1em;
+	}
+}
+
