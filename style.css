@@ -63,8 +63,35 @@ a:active {
   color: #373737;
 }
 
-@media screen and (min-width: 40em) {
-	.split {
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	
+	section {
+		flex-direction: row; max-width:100%; min-width: 100%;
+	}
+	
+	img {
+		float: left;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+	
+	section {
+		flex-direction: row; max-width:100%; min-width: 100%;
+	}
+	
+	img {
+		float: left;
+	}
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {	.split {
 		flex-direction: row;
 	}
 	
@@ -75,5 +102,16 @@ a:active {
 	.split > * + * {
 		margin-left: 1em;
 	}
+	img {
+		float: right;
+	}
 }
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
 
