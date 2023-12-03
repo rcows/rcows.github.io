@@ -18,6 +18,11 @@ main {
 	float: left;
 }
 
+hr {
+    border: 0;
+    height: 50px;
+}
+
 section {
 	padding: 2rem;
 }
