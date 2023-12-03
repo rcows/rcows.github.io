@@ -50,7 +50,6 @@ p {
 
 img {
 	float: right;
-	width: 350px;
 }
 
 a:link {
@@ -69,8 +68,6 @@ a:active {
   color: #373737;
 }
 
-
-/* Extra small devices (phones, 375px and down) */
 @media only screen and (max-width: 375px) {
 	
 	body {
@@ -88,7 +85,6 @@ a:active {
 }
 
 
-/* Small devices (portrait tablets and large phones, 376px and up) */
 @media only screen and (min-width: 376px) {
 	
 	
@@ -99,7 +95,7 @@ a:active {
 	
 	section {
 		flex-direction: row; 
-		max-width: 100%;
+		max-width: 97vw;
 		padding: 0.5rem;
 	}
 	
@@ -108,8 +104,6 @@ a:active {
 		width: 60%;
 	}
 
-
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {	
 
 	.split {
