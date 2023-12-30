@@ -11,6 +11,10 @@ body {
 	font: 1.3rem 'Assistant', sans-serif;
 	line-height: 1.7;
 	color: #1f1f1f;
+	padding-top: 4rem;
+	padding-right: 0rem;
+	padding-bottom: 2rem;
+	padding-left: 0rem;
 }
 
 main {
