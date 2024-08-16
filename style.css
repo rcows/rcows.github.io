@@ -1,8 +1,8 @@
-/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
 
 *,
 *::before,
-*;;after {
+*::after {
 	box-sizing: border-box;
 }
 
@@ -10,31 +10,34 @@ body {
 	background-color: #121212;
 	font: 1.1rem 'Assistant', sans-serif;
 	color: #F5F5F5;
-	opacity: 0.65;
 	line-height: 1.7;
 	letter-spacing: .055rem;
-	padding-top: 4rem;
-	padding-right: 0rem;
-	padding-bottom: 2rem;
-	padding-left: 0rem;
+	padding: 4rem 0 2rem;
 }
 
-main {
+h1 {
+	font-size: 33px;
+	font-weight: 700;
+	font-family: 'Assistant', sans-serif;
+	text-shadow: 2px 2px 1px #000;
+}
+
+.main {
 	display: grid;
-	float: left;
 }
 
 hr {
-    border: 0;
-    height: 50px;
+	border: 0;
+	height: 50px;
 }
 
-section {
-	padding: 2rem;
-}
-
+section,
 .container {
-	margin: auto;
+	padding: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: .2rem;
+	margin-bottom: .2rem;
 	width: min(90%, 70.5rem);
 }
 
@@ -43,129 +46,83 @@ section {
 	flex-direction: column;
 }
 
-h1 {
-	font-size: 33px;
-	font-weight: 550;
-}
-
 p {
-	font-size: 17px;
+	font-size: 18px;
 	font-weight: 300;
-	font-color: #373737;
+	color: #ccc; /* Light grey color for paragraph text */
 }
 
 img {
+	width: 100%; /* Responsive image sizing */
+	max-width: 300px; /* Maximum width to prevent overly large images */
+	margin: 20px 0; /* Space around images */
 	float: right;
+	opacity: 67%;
 }
 
-a:link {
-  color: #FFFFFF;
-}
-
-a:visited {
-  color: #FFFFFF;
+a {
+	color: #FFF;
+	text-decoration: underline; /* No underline */
 }
 
 a:hover {
-  color: #FFFFFF;
+	color: #ff4545; /* Highlight color on hover */
 }
 
-a:active {
-  color: #FFFFFF;
-}
-
+/* Responsive Adjustments */
 @media only screen and (max-width: 375px) {
-	
-	body {
-	    max-height: 95vh;
-	}
-	
-	section {
-		flex-direction: row; 
-	}
-	
-	img {
-		float: left;
+	body, section, img {
+		max-height: 95vh;
+		flex-direction: row;
 		width: 60%;
+		float: left;
 	}
 }
 
-
-@media only screen and (min-width: 376px) {
-	
-	
-	body {
+@media only screen and (min-width: 376px) and (max-width: 767px) {
+	body, section, img {
 		max-height: 95vh;
-	}
-	
-	section {
-		flex-direction: row; 
+		flex-direction: row;
 		padding: 0.5rem;
 	}
-	
-	img {
-		float: left;
-		width: 60%;
-	}
+}
 
-@media only screen and (min-width: 768px) {	
-
+@media only screen and (min-width: 768px) {
 	.split {
 		flex-direction: row;
 	}
-	
-	.split > * {
-		flex-basis: 100%;
-	}
 
-	.split > * + * {
+	.split > *, .split > * + * {
+		flex-basis: 50%; /* Adjust to ensure split layout */
 		margin-left: 0.5em;
 	}
-
-	img {
-		float: right;
-	}
 }
 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
-
-
-/* Base font size for desktops */
-body {
-    font-size: 16px;
-}
-
-/* Smaller devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     body {
         font-size: 14px;
     }
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     body {
         font-size: 15px;
     }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     body {
         font-size: 16px;
     }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     body {
         font-size: 18px;
     }
 }
 
+@keyframes flickerAnimation {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
