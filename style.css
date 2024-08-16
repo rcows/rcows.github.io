@@ -135,3 +135,37 @@ a:active {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
 
+
+/* Base font size for desktops */
+body {
+    font-size: 16px;
+}
+
+/* Smaller devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+}
+
