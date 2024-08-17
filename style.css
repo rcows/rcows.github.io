@@ -13,6 +13,7 @@ body {
 	line-height: 1.7;
 	letter-spacing: .055rem;
 	padding: 4rem 0 2rem;
+	flex-wrap: wrap;
 }
 
 h1 {
@@ -24,6 +25,7 @@ h1 {
 
 .main {
 	display: grid;
+	float: left;
 }
 
 hr {
@@ -56,8 +58,9 @@ img {
 	width: 100%; /* Responsive image sizing */
 	max-width: 300px; /* Maximum width to prevent overly large images */
 	margin: 20px 0; /* Space around images */
-	float: right;
 	opacity: 67%;
+	margin-bottom: .2rem;
+	float: right;
 }
 
 a {
@@ -72,17 +75,12 @@ a:hover {
 /* Responsive Adjustments */
 @media only screen and (max-width: 375px) {
 	body, section, img {
-		max-height: 95vh;
-		flex-direction: row;
 		width: 60%;
-		float: left;
 	}
 }
 
 @media only screen and (min-width: 376px) and (max-width: 767px) {
 	body, section, img {
-		max-height: 95vh;
-		flex-direction: row;
 		padding: 0.5rem;
 	}
 }
@@ -120,9 +118,3 @@ a:hover {
     body {
         font-size: 18px;
     }
-}
-
-@keyframes flickerAnimation {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-}
