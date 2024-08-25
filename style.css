@@ -61,6 +61,7 @@ img {
 	opacity: 67%;
 	margin-bottom: .2rem;
 	float: right;
+	border: 5px solid #8A9A5B; /* Darker outer border */
 }
 
 a {
